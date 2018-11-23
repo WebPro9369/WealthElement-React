@@ -7,7 +7,7 @@ import '../styles/index.sass'
 
 const HomePage = () => (
   <div className="home">
-    <Head title="Home" />
+    <Head title="Wealth Element - Home" />
     <Header />
     <Home />
     <Footer />
