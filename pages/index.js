@@ -1,14 +1,16 @@
 import React from 'react'
-import Home from '../components/home.jsx'
-import Head from '../components/head.jsx'
-import Nav from '../components/nav.jsx'
-import '../styles/general.sass'
+import Home from '../components/home'
+import Head from '../components/head'
+import Header from '../components/shared/header'
+import Footer from '../components/shared/footer'
+import '../styles/index.sass'
 
 const HomePage = () => (
   <div className="home">
     <Head title="Home" />
-    <Nav />
+    <Header />
     <Home />
+    <Footer />
   </div>
 )
 
