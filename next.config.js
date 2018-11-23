@@ -10,13 +10,14 @@ module.exports = withImages(withSass({
     config.node = {
       fs: 'empty'
     }
-
-    config.module.rules.push({
-      test: /\.(jpg|png|gif|svg|pdf|ico)$/,
-      use: [{
-        loader: 'file-loader',
-      }]
-    })
+    if (!isServer) {
+      config.module.rules.push({
+        test: /\.(jpg|png|gif|svg|pdf|ico)$/,
+        use: [{
+          loader: 'file-loader',
+        }]
+      })
+    }
 
     return config
   }
