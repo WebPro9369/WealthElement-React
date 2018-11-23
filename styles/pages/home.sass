@@ -5,13 +5,25 @@
   .home-section-1
     display: flex
     justify-content: center
-    align-items: flex-start
+    align-items: stretch
     flex-wrap: nowrap
-    padding-left: 80px
+
+    +tablet
+      display: block
+      text-align: center
 
     .home-sec1-text-wrapper
       width: 35%
       color: #033436
+
+      +tablet
+        width: 100%
+        p
+          padding-right: 80px
+
+      p
+        min-width: 400px
+        padding-left: 80px
 
       .home-sec1-text-large
         font-size: 36px
@@ -33,19 +45,17 @@
           text-decoration: none
           color: #033436
 
-      .home-sec1-button
-        padding: 10px 15px
-        border-radius: 10px
-        font-family: "Poppins-Regular"
-        font-size: 14px
-        font-weight: bold
-        color: #ffffff
-        background-color: #009A8F
-        box-shadow: 3px 3px 6px #d4d4d4
-
     .home-image-wrapper
+      position: relative
       width: 65%
       padding-top: 100px
+
+      +tablet
+        width: 100%
+        padding-top: 20px
+
+      img
+        height: 100%
 
   .home-section-2
     display: flex
@@ -55,9 +65,15 @@
     background-color: #016964
     padding: 0 80px
 
+    +mediumMobile
+      display: block
+
     .home-sec2-text-wrapper
       width: 50%
       padding: 70px 30px 70px 0px
+
+      +mediumMobile
+        width: 100%
 
       p
         margin: 0
@@ -71,20 +87,73 @@
     .home-sec2-image-wrapper
       width: 50%
 
+      +mediumMobile
+        width: 100%
+
+  .home-section-3
+
+    .home-sec3-main
+      padding: 0 180px
+      .home-text-large, .home-text-small
+        color: #024646
+
+    .home-sec3-sub
+      margin: 0 85px
+      padding: 120px 140px
+      color: #ffffff
+      background-color: #016964
+
+      p
+        max-width: 700px
+
+    .home-sec3-bottom
+      .home-text-extra-large
+        color: #024646
+
+      .home-sec3-button
+        color: #ffffff
+
+  .home-flex-box
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: nowrap
+
+  .home-text-extra-large
+    color: #ffffff
+    font-size: 36px
+    font-weight: 600
+    padding: 10px 0
+    margin: 0
+
   .home-text-large
     color: #ffffff
     font-size: 28px
     font-weight: 600
     padding: 10px 0
+    margin: 0
 
   .home-text-small
     color: #ffffff
     font-size: 16px
     font-weight: normal
     padding-bottom: 30px
+    margin: 0
 
   .home-text-yellow
     color: #FFBC5A
     font-size: 14px
     font-weight: 600
-    padding-top: 30px      
+    padding-top: 30px
+    margin: 0
+
+  .home-button
+    padding: 10px 15px
+    margin: 0 80px
+    border-radius: 10px
+    font-family: "Poppins-Regular"
+    font-size: 14px
+    font-weight: bold
+    color: #ffffff
+    background-color: #009A8F
+    box-shadow: 3px 3px 6px #d4d4d4

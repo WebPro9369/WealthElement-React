@@ -12,13 +12,13 @@ const Home = () => (
       <div className="home-sec1-text-wrapper">
         <p className="home-sec1-text-large">Build Significant Wealth Investing in Stocks.</p>
         <p className="home-sec1-text-medium">Wealth Element is an online investing solution for people who refuse to settle for average returns. For people who want to take control of their lives and know it takes time, brains and effort to achieve it. If you are one of those people, …</p>
-        <Button className="home-sec1-button">Start with a Free Plan</Button>
-        <div className="home-sec1-text-small">
+        <Button className="home-button">Start with a Free Plan</Button>
+        <p className="home-sec1-text-small">
           <a href="#">…or watch video</a>
-        </div>
+        </p>
       </div>
       <div className="home-image-wrapper">
-        <img src={imgMain} width="100%" alt=""/>
+        <img src={imgMain} width="100%" height="100%" alt=""/>
       </div>
     </div>
     <div className="home-section-2">
@@ -41,11 +41,11 @@ const Home = () => (
       </div>
     </div>
     <div className="home-section-3">
-      <div >
-        <p>Join the investing [R]evolution</p>
-        <p>Millions of Investors are now using Robo-advisors. You should too.</p>
-        <p>Building wealth has never been easier. You can get started in less than 5 minutes. Simply</p>
-        <div>
+      <div className="home-sec3-main">
+        <p className="home-text-yellow">Join the investing [R]evolution</p>
+        <p className="home-text-large">Millions of Investors are now using Robo-advisors.<br />You should too.</p>
+        <p className="home-text-small">Building wealth has never been easier. You can get started in less than 5 minutes. Simply</p>
+        <div className="home-flex-box">
           <div>
             <img src={imgTile1} alt=""/>
             <p>Open an Account. Open a brokerage account designating us as your investment adviser.</p>
@@ -60,16 +60,16 @@ const Home = () => (
           </div>
         </div>
       </div>
-      <div>
-        <p>Engineered to Change Lives</p>
-        <p>Frankly, Our Investment Solution is not for Everyone.</p>
-        <p>We built Wealth Element for hard-working, ambitious people who simply don’t have the time or desire to read hundreds of financial reports each year in search of the best investment opportunities; People who want the best in life and are willing to be disciplined and patient in their pursuit.</p>
-        <p>If you’re one of those people, Join Us.</p>
-        <p>We’ll invest your money in a small group of great companies, selected on the basis of value and quality. Taking a long-term, business-owner approach, is the best way to achieve life-changing results. </p>
+      <div className="home-sec3-sub">
+        <p className="home-text-yellow">Engineered to Change Lives</p>
+        <p className="home-text-large">Frankly, Our Investment Solution is not for <br />Everyone.</p>
+        <p className="home-text-small">We built Wealth Element for hard-working, ambitious people who simply don’t have the time or desire to read hundreds of financial reports each year in search of the best investment opportunities; People who want the best in life and are willing to be disciplined and patient in their pursuit.</p>
+        <p className="home-text-small">If you’re one of those people, <a href="#"><b>Join Us</b></a>.</p>
+        <p className="home-text-small">We’ll invest your money in a small group of great companies, selected on the basis of value and quality. Taking a long-term, business-owner approach, is the best way to achieve life-changing results. </p>
       </div>
-      <div>
-        <p>Let Us Help You Build Real and Permanent Wealth.</p>
-        <Button>Get Started!</Button>
+      <div className="home-sec3-bottom">
+        <p className="home-text-extra-large">Let Us Help You Build Real and Permanent Wealth.</p>
+        <Button className="home-button">Get Started!</Button>
       </div>
     </div>
   </div>
