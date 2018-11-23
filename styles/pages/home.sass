@@ -94,7 +94,7 @@
 
     .home-sec3-main
       padding: 0 180px
-      .home-text-large, .home-text-small
+      .we-text-large, .we-text-small
         color: #024646
 
     .home-sec3-sub
@@ -103,57 +103,65 @@
       color: #ffffff
       background-color: #016964
 
+      +mediumMobile
+        padding: 80px 40px
+
       p
-        max-width: 700px
+        max-width: 70%
+
+        +mediumMobile
+          max-width: 100%
+
+      a
+        color: #ffffff
 
     .home-sec3-bottom
-      .home-text-extra-large
-        color: #024646
+      text-align: center
+      padding-bottom: 120px
 
-      .home-sec3-button
+      .we-text-extra-large
+        color: #024646
+        padding-top: 120px
+        padding-bottom: 30px
+
+      .home-button
         color: #ffffff
 
   .home-flex-box
     display: flex
     justify-content: center
-    align-items: center
+    align-items: stretch
     flex-wrap: nowrap
+    padding-bottom: 200px
 
-  .home-text-extra-large
-    color: #ffffff
-    font-size: 36px
-    font-weight: 600
-    padding: 10px 0
-    margin: 0
+    +tablet
+      display: block
 
-  .home-text-large
-    color: #ffffff
-    font-size: 28px
-    font-weight: 600
-    padding: 10px 0
-    margin: 0
+    .home-card-item
+      width: 26%
+      margin-left: 11%
 
-  .home-text-small
-    color: #ffffff
-    font-size: 16px
-    font-weight: normal
-    padding-bottom: 30px
-    margin: 0
+      +tablet
+        width: 100%
+        margin: 0
 
-  .home-text-yellow
-    color: #FFBC5A
-    font-size: 14px
-    font-weight: 600
-    padding-top: 30px
-    margin: 0
+      &:first-child
+        margin-left: 0
 
-  .home-button
-    padding: 10px 15px
-    margin: 0 80px
-    border-radius: 10px
-    font-family: "Poppins-Regular"
-    font-size: 14px
-    font-weight: bold
-    color: #ffffff
-    background-color: #009A8F
-    box-shadow: 3px 3px 6px #d4d4d4
+      img
+        height: 70%
+
+      .home-card-text
+        display: flex
+        padding: 20px 0
+
+        .home-card-number
+          width: 15%
+          font-size: 24px
+          text-align: center
+
+        p
+          width: 85%
+          font-size: 18px
+          color: #024646
+          margin: 0
