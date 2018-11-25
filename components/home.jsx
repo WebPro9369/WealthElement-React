@@ -24,12 +24,12 @@ const Home = () => (
     <div className="home-section-2">
       <div className="home-sec2-text-wrapper">
         <div>
-          <p className="we-text-yellow">INVEST FOR SUCCESS</p>
+          <p className="we-text-small-yellow">INVEST FOR SUCCESS</p>
           <p className="we-text-large">Discover What’s Possible</p>
           <p className="we-text-small">We believe everyone should have access to the same investment opportunities as the ultra-wealthy.  Discover why successful people prefer Active Investment strategies instead of Passive Strategies or index funds.</p>
         </div>
         <div>
-          <p className="we-text-yellow">PUT YOUR MONEY TO WORK INTELLIGENTLY</p>
+          <p className="we-text-small-yellow">PUT YOUR MONEY TO WORK INTELLIGENTLY</p>
           <p className="we-text-large">Harness the Power of Systematic Investing</p>
           <p className="we-text-small">We combine modern technology and fundamental investment research to help you grow, preserve and manage your savings.</p>
           <p className="we-text-small">Computers perform certain things better than humans. Humans perform certain things better than computers. In investing, nothing beats the right combination of both.  We use proprietary software to identify possible investment opportunities based on quantitative models and human judgement to sort through those opportunities and select the best.</p>
@@ -42,7 +42,7 @@ const Home = () => (
     </div>
     <div className="home-section-3">
       <div className="home-sec3-main">
-        <p className="we-text-yellow">Join the investing [R]evolution</p>
+        <p className="we-text-small-yellow">Join the investing [R]evolution</p>
         <p className="we-text-large">Millions of Investors are now using Robo-advisors.<br />You should too.</p>
         <p className="we-text-small">Building wealth has never been easier. You can get started in less than 5 minutes. Simply</p>
         <div className="home-flex-box">
@@ -70,7 +70,7 @@ const Home = () => (
         </div>
       </div>
       <div className="home-sec3-sub">
-        <p className="we-text-yellow">Engineered to Change Lives</p>
+        <p className="we-text-small-yellow">Engineered to Change Lives</p>
         <p className="we-text-large">Frankly, Our Investment Solution is not for <br />Everyone.</p>
         <p className="we-text-small">We built Wealth Element for hard-working, ambitious people who simply don’t have the time or desire to read hundreds of financial reports each year in search of the best investment opportunities; People who want the best in life and are willing to be disciplined and patient in their pursuit.</p>
         <p className="we-text-small">If you’re one of those people, &nbsp;<a href="#"><b>Join Us</b></a>.</p>

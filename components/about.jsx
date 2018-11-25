@@ -6,7 +6,7 @@ const AboutComponent = () => (
     <div className="about-section-1">
       <div className="about-sec1-main">
         <div className="about-sec1-main-text">
-          <p className="we-text-yellow-18">
+          <p className="we-text-yellow we-text-normal we-text-semibold">
             ABOUT US
           </p>
           <p className="we-text-extra-large we-text-darkgreen">
@@ -33,7 +33,7 @@ const AboutComponent = () => (
       </div>
     </div>
     <div className="about-section-2">
-      <p className="we-text-yellow">WHAT WE DO</p>
+      <p className="we-text-small-yellow">WHAT WE DO</p>
       <p className="we-text-large">Our Services</p>
       <p className="we-text-small">We provide online investment management services to individuals, families, and institutional clients (Partnerships, corporations, LLCs, Trusts, etc.).
         <br />Our services are designed to help our clients build, grow and preserve wealth by investing directly and intelligently in stocks.
@@ -54,7 +54,7 @@ const AboutComponent = () => (
         <img src={imgWarren} width="100%" alt="" />
       </div>
       <div className="about-sec3-text">
-        <p className="we-text-yellow">
+        <p className="we-text-small-yellow">
           OUR MANIFESTO
         </p>
         <p className="we-text-large we-text-darkgreen">
@@ -70,7 +70,7 @@ const AboutComponent = () => (
       </div>
     </div>
     <div className="about-section-4">
-      <p className="we-text-yellow">
+      <p className="we-text-small-yellow">
         Designed for Superior Returns
       </p>
       <p className="we-text-large">
