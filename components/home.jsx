@@ -12,7 +12,7 @@ const Home = () => (
       <div className="home-sec1-text-wrapper">
         <p className="home-sec1-text-large">Build Significant Wealth Investing in Stocks.</p>
         <p className="home-sec1-text-medium">Wealth Element is an online investing solution for people who refuse to settle for average returns. For people who want to take control of their lives and know it takes time, brains and effort to achieve it. If you are one of those people, …</p>
-        <Button className="we-button">Start with a Free Plan</Button>
+        <Button className="we-button"><Link href="/get-started"><a>Start with a Free Plan</a></Link></Button>
         <p className="home-sec1-text-small">
           <a href="#">…or watch video</a>
         </p>
@@ -78,7 +78,7 @@ const Home = () => (
       </div>
       <div className="home-sec3-bottom">
         <p className="we-text-extra-large">Let Us Help You Build Real and <br />Permanent Wealth.</p>
-        <Button className="we-button">Get Started!</Button>
+        <Button className="we-button"><Link href="/get-started"><a>Get Started!</a></Link></Button>
       </div>
     </div>
   </div>
