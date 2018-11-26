@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { Button, List, Popover } from 'antd'
+import { Button } from 'antd'
 import PopMenu from './PopMenu'
 
 const Header = () => (

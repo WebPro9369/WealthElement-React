@@ -1,17 +1,17 @@
 import React from 'react'
-import SupportComponent from '../components/Support'
+import GetStartedComponent from '../components/GetStarted'
 import Head from '../components/head'
 import Header from '../components/shared/Header'
 import Footer from '../components/shared/Footer'
 import '../styles/index.sass'
 
-const SupportPage = () => (
+const GetStartedPage = () => (
   <div className="about">
-    <Head title="Wealth Element - Support" />
+    <Head title="Wealth Element - Get Started" />
     <Header />
-    <SupportComponent />
+    <GetStartedComponent />
     <Footer />
   </div>
 )
 
-export default SupportPage
+export default GetStartedPage

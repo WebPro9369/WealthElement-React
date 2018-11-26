@@ -25,7 +25,7 @@ export default class PopMenu extends React.Component {
             className="popmenu-list"
             size="large"
             dataSource={dataSource}
-            renderItem={item => (<List.Item className="popmenu-list-item"><Link href={item.link}>{item.text}</Link></List.Item>)}
+            renderItem={item => (<List.Item className="popmenu-list-item"><Link href={item.link}><a>{item.text}</a></Link></List.Item>)}
           >
           </List>
         )}
