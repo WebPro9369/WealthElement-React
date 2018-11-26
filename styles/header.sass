@@ -1,36 +1,61 @@
 .header-wrapper
-    display: flex
-    justify-content: center
-    align-items: center
-    flex-wrap: nowrap
-    height: 150px
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: nowrap
+  height: 150px
 
-    .header-logo-wrapper
-        width: 10%
-        text-align: left
-        padding: 0 80px
+  .header-logo-wrapper
+    width: 10%
+    text-align: left
+    padding: 0 80px
 
-    .header-links-wrapper
-        width: 90%
-        text-align: right
-        padding-right: 80px
+  .header-links-wrapper
+    width: 90%
+    text-align: right
+    padding-right: 80px
 
-        .header-link
-            padding: 10px 30px
-            font-family: "Poppins-Regular"
-            font-size: 18px
-            color: $FONT_DARKGREEN
-            text-decoration: none
+    +tablet 
+      display: none
 
-            &:hover
-                color: #009A8F
+    .header-link
+      padding: 10px 30px
+      font-family: "Poppins-Regular"
+      font-size: 18px
+      color: $FONT_DARKGREEN
+      text-decoration: none
 
-        .header-button-try
-            padding: 10px 30px
-            margin: 0 30px
-            font-family: "Poppins-Regular"
-            font-size: 16px
-            font-weight: 600
-            background-color: #009A8F
-            color: #ffffff
-            border-radius: 10px
+      &:hover
+        color: #009A8F
+
+    .header-button-try
+      padding: 10px 30px
+      margin: 0 30px
+      font-family: "Poppins-Regular"
+      font-size: 16px
+      font-weight: 600
+      background-color: #009A8F
+      color: #ffffff
+      border-radius: 10px
+
+  .header-popover-wrapper
+    display: none
+
+    +tablet 
+      display: block
+      width: 90%
+      text-align: right
+      padding-right: 80px
+
+.popmenu-icon
+  font-size: 30px
+
+.popmenu-list
+  font-size: 30px
+  width: 300px
+
+  .popmenu-list-item
+    padding: 30px
+
+    a 
+      color: $FONT_DARKGREEN
