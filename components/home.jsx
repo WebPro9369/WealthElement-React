@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Button } from 'antd'
-// import imgMain from '/static/mainbackground.png'
+// import imgMain from '/static/images/mainbackground.png'
 // import imgTile1 from '/static/images/home_tile_1.png'
 // import imgTile2 from '/static/images/home_tile_2.png'
 // import imgTile3 from '/static/images/home_tile_3.png'
