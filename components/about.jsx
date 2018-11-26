@@ -1,5 +1,5 @@
 import React from 'react'
-import imgWarren from '../static/images/about_warren.png'
+// import imgWarren from '/static/images/about_warren.png'
 
 const AboutComponent = () => (
   <div className="about-page">
@@ -23,7 +23,8 @@ const AboutComponent = () => (
           </p>
         </div>
         <div className="about-sec1-main-image">
-          <img src={imgWarren} width="100%" alt="" />
+          {/* <img src={imgWarren} width="100%" alt="" /> */}
+          <img src="/static/images/about_warren.png" width="100%" alt="" />
         </div>
       </div>
       <div className="about-sec1-sub">
@@ -51,7 +52,8 @@ const AboutComponent = () => (
     </div>
     <div className="about-section-3">
       <div className="about-sec3-image">
-        <img src={imgWarren} width="100%" alt="" />
+        {/* <img src={imgWarren} width="100%" alt="" /> */}
+        <img src="/static/images/about_warren.png" width="100%" alt="" />
       </div>
       <div className="about-sec3-text">
         <p className="we-text-small-yellow">

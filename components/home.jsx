@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 import { Button } from 'antd'
-import imgMain from '../static/images/mainbackground.png'
-import imgTile1 from '../static/images/home_tile_1.png'
-import imgTile2 from '../static/images/home_tile_2.png'
-import imgTile3 from '../static/images/home_tile_3.png'
+// import imgMain from '/static/mainbackground.png'
+// import imgTile1 from '/static/images/home_tile_1.png'
+// import imgTile2 from '/static/images/home_tile_2.png'
+// import imgTile3 from '/static/images/home_tile_3.png'
 
 const Home = () => (
   <div className="home-main-wrapper">
@@ -18,7 +18,8 @@ const Home = () => (
         </p>
       </div>
       <div className="home-image-wrapper">
-        <img src={imgMain} width="100%" height="100%" alt=""/>
+        {/* <img src={imgMain} width="100%" height="100%" alt=""/> */}
+        <img src="/static/images/mainbackground.png" width="100%" height="100%" alt=""/>
       </div>
     </div>
     <div className="home-section-2">
@@ -47,21 +48,24 @@ const Home = () => (
         <p className="we-text-small">Building wealth has never been easier. You can get started in less than 5 minutes. Simply</p>
         <div className="home-flex-box">
           <div className="home-card-item">
-            <img src={imgTile1} width="100%" alt=""/>
+            {/* <img src={imgTile1} width="100%" alt=""/> */}
+            <img src='../static/images/home_tile_1.png' width="100%" alt=""/>
             <div className="home-card-text">
               <div className="home-card-number">1.</div>
               <p><b>Open an Account.</b> Open a brokerage account designating us as your investment adviser.</p>
             </div>
           </div>
           <div className="home-card-item">
-            <img src={imgTile2} width="100%" alt=""/>
+          {/* <img src={imgTile2} width="100%" alt=""/> */}
+          <img src='../static/images/home_tile_2.png' width="100%" alt=""/>
             <div className="home-card-text">
               <div className="home-card-number">2.</div>
               <p><b>Add Funds.</b> You can start with any amount, set up automatic deposit, and add funds anytime from your phone or computer. </p>
             </div>
           </div>
           <div className="home-card-item">
-            <img src={imgTile3} width="100%" alt=""/>
+          {/* <img src={imgTile3} width="100%" alt=""/> */}
+          <img src='../static/images/home_tile_3.png' width="100%" alt=""/>
             <div className="home-card-text">
               <div className="home-card-number">3.</div>
               <p><b>Let Us Do the Rest.</b> We’ll manage your money for you.</p>
