@@ -1,7 +1,8 @@
+const withCSS = require('@zeit/next-css')
 const withSass = require('@zeit/next-sass')
 const withImages = require('next-images')
 
-module.exports = withImages(withSass({
+module.exports = withImages(withCSS(withSass({
   cssModules: false,
   webpack: (config, {
     isServer
@@ -21,4 +22,4 @@ module.exports = withImages(withSass({
 
     return config
   }
-}));
+})))
