@@ -1,9 +1,9 @@
 import React from 'react'
 import 'antd/dist/antd.css'
-import SupportComponent from '../components/support'
+import SupportComponent from '../components/Support'
 import Head from '../components/head'
-import Header from '../components/shared/header'
-import Footer from '../components/shared/footer'
+import Header from '../components/shared/Header'
+import Footer from '../components/shared/Footer'
 import '../styles/index.sass'
 
 const SupportPage = () => (

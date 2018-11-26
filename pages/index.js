@@ -1,8 +1,8 @@
 import React from 'react'
-import Home from '../components/home'
+import Home from '../components/Home'
 import Head from '../components/head'
-import Header from '../components/shared/header'
-import Footer from '../components/shared/footer'
+import Header from '../components/shared/Header'
+import Footer from '../components/shared/Footer'
 import '../styles/index.sass'
 
 const HomePage = () => (
