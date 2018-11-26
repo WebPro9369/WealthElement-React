@@ -1,5 +1,83 @@
 .support-page
   padding: 30px 80px
 
+  +mobile 
+    padding: 30px 40px
+
+  +smallMobile
+    padding: 30px 20px
+
+  .sup-search-container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-bottom: 60px
+
+    +smallMobile
+      display: block
+      padding-bottom: 30px
+
+    .ant-input-group-wrapper
+      width: auto
+
+      +smallMobile
+        width: 100%
+
+      .ant-input-group-addon .anticon
+        font-size: 24px
+        font-weight: 600
+        color: $FONT_DARKGREEN
+
+      .ant-input
+        width: 300px
+        font-weight: 600
+        color: $FONT_DARKGREEN
+
+        +mediumMobile 
+          width: 200px
+
+        +smallMobile
+          width: 100%
+
   .sup-documents-container
     background-color: $BG_GREEN
+    padding: 120px 80px
+    margin-bottom: 80px
+
+    +tablet 
+      padding: 80px 40px
+
+    +mediumMobile 
+      padding: 60px 30px
+
+    +smallMobile
+      padding: 40px 10px
+
+    .sup-documents-content
+      padding-left: 40px
+
+  .sup-faq-container
+    margin-bottom: 60px
+
+    .sp-faq-title
+      padding-bottom: 60px
+
+    .sp-faq-content-question
+      font-weight: 600
+
+    .sp-faq-content-list-style-decimal
+      list-style: decimal
+  
+    .ant-collapse
+      .ant-collapse-item
+        .ant-collapse-header
+          font-size: 22px
+          font-family: "Poppins-Regular"
+          font-weight: 600
+          color: $FONT_DARKGREEN
+
+        .ant-collapse-content
+          font-size: 16px
+          font-family: "Poppins-Regular"
+          font-weight: 400
+          color: $FONT_DARKGREEN
