@@ -12,7 +12,9 @@ const Home = () => (
       <div className="home-sec1-text-wrapper">
         <p className="home-sec1-text-large">Build Significant Wealth Investing in Stocks.</p>
         <p className="home-sec1-text-medium">Wealth Element is an online investing solution for people who refuse to settle for average returns. For people who want to take control of their lives and know it takes time, brains and effort to achieve it. If you are one of those people, …</p>
-        <Button className="we-button home-button"><Link href="/get-started"><a>Start with a Free Plan</a></Link></Button>
+        <div className="home-sec1-button-wrapper">
+          <Button className="we-button home-button"><Link href="/get-started"><a>Start with a Free Plan</a></Link></Button>
+        </div>
         <p className="home-sec1-text-small">
           <a href="#">…or watch video</a>
         </p>
@@ -44,7 +46,7 @@ const Home = () => (
     <div className="home-section-3">
       <div className="home-sec3-main">
         <p className="we-text-small-yellow">Join the investing [R]evolution</p>
-        <p className="we-text-large">Millions of Investors are now using Robo-advisors.<br />You should too.</p>
+        <p className="we-text-large">Millions of Investors are now using <span className="span-unbreak">Robo-advisors.</span><br />You should too.</p>
         <p className="we-text-small">Building wealth has never been easier. You can get started in less than 5 minutes. Simply</p>
         <div className="home-flex-box">
           <div className="home-card-item">
