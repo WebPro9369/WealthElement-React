@@ -10,7 +10,7 @@
 
     +tablet
       display: block
-      text-align: center
+      // text-align: center
 
     .home-sec1-text-wrapper
       width: 35%
@@ -19,31 +19,38 @@
       +tablet
         width: 100%
         p
-          padding-right: 80px
+          padding-right: 5%
 
       p
-        min-width: 400px
-        padding-left: 80px
+        min-width: 200px
+        padding-left: 5%
 
       .home-sec1-text-large
         font-size: 36px
         font-weight: 600
         margin: 10px 0
 
+        +smallMobile
+          font-size: 30px
+
       .home-sec1-text-medium
         font-size: 18px
-        font-weight: normal
+        font-weight: 200
         padding-bottom: 70px
         margin: 10px 0
 
       .home-sec1-text-small
         padding-top: 20px
         font-size: 14px
-        font-weight: normal
+        font-weight: 200
 
         a
           text-decoration: none
           color: $FONT_DARKGREEN
+
+    .home-sec1-button-wrapper
+      width: 100%
+      text-align: center
 
     .home-image-wrapper
       position: relative
@@ -63,7 +70,7 @@
     align-items: center
     flex-wrap: nowrap
     background-color: $BG_GREEN
-    padding: 0 80px
+    padding: 0 5%
 
     +mediumMobile
       display: block
@@ -74,6 +81,7 @@
 
       +mediumMobile
         width: 100%
+        padding: 20px 0
 
       p
         margin: 0
@@ -94,6 +102,10 @@
 
     .home-sec3-main
       padding: 0 180px
+
+      +tablet 
+        padding: 0 15%
+
       .we-text-large, .we-text-small
         color: #024646
 
@@ -103,8 +115,15 @@
       color: #ffffff
       background-color: $BG_GREEN
 
+      +tablet
+        margin: 0 5%
+        padding: 80px 20%
+
       +mediumMobile
-        padding: 80px 40px
+        padding: 60px 15%
+
+      +smallMobile
+        padding: 40px 10%
 
       p
         max-width: 70%
@@ -119,10 +138,31 @@
       text-align: center
       padding-bottom: 120px
 
+      +tablet
+        padding-bottom: 80px
+
+      +mediumMobile
+        padding-bottom: 60px
+
+      +smallMobile
+        padding-bottom: 40px
+
       .we-text-extra-large
         color: #024646
         padding-top: 120px
         padding-bottom: 30px
+
+        +tablet
+          padding-top: 80px
+          padding-bottom: 25px
+
+        +mediumMobile
+          padding-top: 60px
+          padding-bottom: 20px
+
+        +smallMobile
+          padding-top: 40px
+          padding-bottom: 15px
 
   .home-flex-box
     display: flex
@@ -133,6 +173,13 @@
 
     +tablet
       display: block
+      padding-bottom: 160px
+
+    +mediumMobile
+      padding-bottom: 120px
+
+    +smallMobile 
+      padding-bottom: 80px
 
     .home-card-item
       width: 26%
@@ -141,6 +188,7 @@
       +tablet
         width: 100%
         margin: 0
+        margin-bottom: 40px
 
       &:first-child
         margin-left: 0
@@ -156,6 +204,9 @@
           width: 15%
           font-size: 24px
           text-align: center
+          
+          +smallMobile
+            font-size: 20px
 
         p
           width: 85%
@@ -163,5 +214,5 @@
           color: #024646
           margin: 0
 
-.home-button
-  margin: 0 80px
+          +smallMobile
+            font-size: 14px
