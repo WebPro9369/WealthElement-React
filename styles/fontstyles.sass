@@ -1,3 +1,117 @@
+// Font definitions
+@font-face
+  font-family: "Poppins-Regular"
+  src: url('/static/fonts/Poppins-Thin.ttf')
+  font-weight: 100
+  font-style: normal
+
+@font-face
+  font-family: "Poppins-Regular"
+  src: url('/static/fonts/Poppins-ThinItalic.ttf')
+  font-weight: 100
+  font-style: italic
+
+@font-face
+  font-family: "Poppins-Regular"
+  src: url('/static/fonts/Poppins-ExtraLight.ttf')
+  font-weight: 200
+  font-style: normal
+
+@font-face
+  font-family: "Poppins-Regular"
+  src: url('/static/fonts/Poppins-ExtraLightItalic.ttf')
+  font-weight: 200
+  font-style: italic
+
+@font-face
+  font-family: "Poppins-Regular"
+  src: url('/static/fonts/Poppins-Light.ttf')
+  font-weight: 300
+  font-style: normal
+
+@font-face
+    font-family: "Poppins-Regular"
+    src: url('/static/fonts/Poppins-LightItalic.ttf')
+    font-weight: 300
+    font-style: italic
+
+@font-face
+  font-family: "Poppins-Regular"
+  src: url('/static/fonts/Poppins-Regular.ttf')
+  font-weight: 400
+  font-style: normal
+
+@font-face
+  font-family: "Poppins-Regular"
+  src: url('/static/fonts/Poppins-Italic.ttf')
+  font-weight: 400
+  font-style: italic
+
+@font-face
+  font-family: "Poppins-Regular"
+  src: url('/static/fonts/Poppins-Medium.ttf')
+  font-weight: 500
+  font-style: normal
+
+@font-face
+  font-family: "Poppins-Regular"
+  src: url('/static/fonts/Poppins-MediumItalic.ttf')
+  font-weight: 500
+  font-style: italic
+
+@font-face
+  font-family: "Poppins-Regular"
+  src: url('/static/fonts/Poppins-SemiBold.ttf')
+  font-weight: 600
+  font-style: normal
+
+@font-face
+  font-family: "Poppins-Regular"
+  src: url('/static/fonts/Poppins-SemiBoldItalic.ttf')
+  font-weight: 600
+  font-style: italic
+
+@font-face
+  font-family: "Poppins-Regular"
+  src: url('/static/fonts/Poppins-Bold.ttf')
+  font-weight: 700
+  font-style: normal
+
+@font-face
+  font-family: "Poppins-Regular"
+  src: url('/static/fonts/Poppins-BoldItalic.ttf')
+  font-weight: 700
+  font-style: italic
+
+@font-face
+  font-family: "Poppins-Regular"
+  src: url('/static/fonts/Poppins-ExtraBold.ttf')
+  font-weight: 800
+  font-style: normal
+
+@font-face
+  font-family: "Poppins-Regular"
+  src: url('/static/fonts/Poppins-ExtraBoldItalic.ttf')
+  font-weight: 800
+  font-style: italic
+
+@font-face
+  font-family: "Poppins-Regular"
+  src: url('/static/fonts/Poppins-Black.ttf')
+  font-weight: 900
+  font-style: normal
+
+@font-face
+  font-family: "Poppins-Regular"
+  src: url('/static/fonts/Poppins-BlackItalic.ttf')
+  font-weight: 900
+  font-style: italic
+
+
+
+//**
+//**  Custom Font classes  **
+//**
 .we-text-extra-large
   color: #ffffff
   font-family: "Poppins-Regular"
@@ -5,6 +119,9 @@
   font-weight: 600
   padding: 10px 0
   margin: 0
+
+  +smallMobile
+    font-size: 30px
 
 .we-text-large
   color: #ffffff
@@ -14,13 +131,19 @@
   padding: 10px 0
   margin: 0
 
+  +smallMobile
+    font-size: 24px
+
 .we-text-medium
   color: #ffffff
   font-family: "Poppins-Regular"
   font-size: 24px
-  font-weight: 600
+  font-weight: 500
   padding: 10px 0
   margin: 0
+
+  +smallMobile
+    font-size: 20px
 
 .we-text-normal
   color: #ffffff
@@ -28,22 +151,31 @@
   font-size: 18px
   font-weight: normal
   padding-bottom: 30px
-  margin: 0  
+  margin: 0
+
+  +smallMobile
+    font-size: 16px  
 
 .we-text-small
   color: #ffffff
   font-family: "Poppins-Regular"
   font-size: 16px
-  font-weight: normal
+  font-weight: 200
   padding-bottom: 30px
   margin: 0
+
+  +smallMobile
+    font-size: 14px
 
 .we-text-extra-small
   color: #ffffff
   font-family: "Poppins-Regular"
   font-size: 14px
-  font-weight: normal
+  font-weight: 200
   margin: 0
+
+  +smallMobile
+    font-size: 12px  
 
 .we-text-small-yellow
   color: $FONT_YELLOW
@@ -53,6 +185,10 @@
   padding-top: 30px
   margin: 0
 
+  +smallMobile
+    font-size: 12px
+    padding-top: 20px  
+
 .we-text-yellow-18
   color: $FONT_YELLOW
   font-family: "Poppins-Regular"
@@ -61,6 +197,10 @@
   padding-top: 30px
   margin: 0
 
+  +smallMobile
+    font-size: 16px
+    padding-top: 24px
+  
 .we-text-darkgreen
   color: $FONT_DARKGREEN !important
 
@@ -71,10 +211,10 @@
   font-weight: 400 !important
 
 .we-text-semibold
-  font-weight: 600 !important
+  font-weight: 500 !important
 
 .we-text-bold
-  font-weight: 800 !important
+  font-weight: 700 !important
 
 .we-text-italic
   font-style: italic !important
@@ -84,3 +224,6 @@
 
 .we-text-nopadding
   padding: 0
+
+.span-unbreak
+  white-space: nowrap
